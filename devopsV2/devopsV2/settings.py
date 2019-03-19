@@ -37,13 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+#    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -118,3 +119,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#mail
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+  
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.exmail.qq.com'  # 
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'XXX' # 
+EMAIL_HOST_PASSWORD = 'XXX'  #
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
