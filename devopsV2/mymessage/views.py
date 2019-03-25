@@ -1,18 +1,25 @@
 from django.shortcuts import render
-from django.conf import settings
-from django.core.mail import send_mail
 from django.http import HttpResponse,JsonResponse
+
+from .myviews.Mail_Send import my_mail_send
+from mytool.myviews.Thread_tool import MyThread
+
+import json
 
 # Create your views here.
 
+
 def mymail(request,service=None):
-    send_mail(
-    'Subject here',
-    "Here is the message.%s" % service,
-    settings.DEFAULT_FROM_EMAIL,
-    ['huangyf@ev-link.com.cn'],
-    fail_silently=False,
-    )
+#    prints = PrintThread()
+    if request.body:
+        reqbody = json.loads(request.body)
+        reqcontent_type = request.content_type
+        requserid = reqbody['userid']
+        mails = MyThread(my_mail_send,requserid)
+        mails.start()
+    '''
+    send_mail
+    '''
     return(JsonResponse({'status': 0, 'msg': 'success'}))
 
 def index(request,service=None):
