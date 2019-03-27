@@ -1,5 +1,7 @@
 from django.conf import settings
 from django.core.mail import send_mail
+import logging
+logger = logging.getLogger(__name__)
 
 def my_mail_send(userid):
     result=send_mail(
@@ -9,5 +11,5 @@ def my_mail_send(userid):
         [userid],
         fail_silently=False,
     )
-    print(result)
+    logger.info(result)
     return(result)

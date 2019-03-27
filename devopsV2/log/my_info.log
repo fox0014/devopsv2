@@ -1,0 +1,2 @@
+[2019-03-27 09:14:21,532][Thread-1:140465361909504][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-27 09:14:23,941][Thread-3:140465353516800][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:14][INFO][1]
