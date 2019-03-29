@@ -15,7 +15,9 @@ def mymail(request,service=None):
         reqbody = json.loads(request.body)
         reqcontent_type = request.content_type
         requserid = reqbody['userid']
-        mails = MyThread(my_mail_send,requserid)
+        reqmsg_title = reqbody['msg_title']
+        reqmsg_body = reqbody['msg_body']
+        mails = MyThread(my_mail_send,requserid=requserid,reqmsg_title=reqmsg_title,reqmsg_body=reqmsg_body)
         mails.start()
     '''
     send_mail

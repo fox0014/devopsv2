@@ -1,2 +1,91 @@
 [2019-03-27 09:14:21,532][Thread-1:140465361909504][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
 [2019-03-27 09:14:23,941][Thread-3:140465353516800][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:14][INFO][1]
+[2019-03-27 09:30:11,616][Thread-1:139796689188608][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-27 09:32:44,103][Thread-1:139796689188608][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 07:23:31,023][Thread-1:140189005354752][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 07:23:32,343][Thread-3:140188996962048][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:14][INFO][1]
+[2019-03-29 07:47:19,276][Thread-1:139842985318144][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 07:47:20,395][Thread-3:139842976663296][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:14][INFO][1]
+[2019-03-29 07:48:39,166][Thread-1:140084109887232][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 07:48:40,141][Thread-3:140084101494528][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:14][INFO][1]
+[2019-03-29 07:50:37,266][Thread-1:140300185089792][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 07:50:38,326][Thread-3:140300176697088][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:14][INFO][1]
+[2019-03-29 07:51:52,833][Thread-1:140300283442944][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 07:51:54,302][Thread-3:140300206995200][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:14][INFO][1]
+[2019-03-29 08:25:48,335][Thread-1:139836577748736][task_id:django.server][basehttp.py:136][INFO]["GET /message/mail/ HTTP/1.1" 200 40]
+[2019-03-29 08:28:21,889][Thread-1:139836577748736][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:28:23,074][Thread-3:139836569093888][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:14][INFO][1]
+[2019-03-29 08:33:24,111][Thread-1:139836577748736][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:33:25,608][Thread-4:139836569093888][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:14][INFO][1]
+[2019-03-29 08:35:38,217][Thread-1:140417826928384][task_id:django.request][log.py:228][ERROR][Internal Server Error: /message/mail/]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 28, in index
+    result=mymail(request,service)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 19, in mymail
+    mails = MyThread(my_mail_send,requserid,reqmsg_title)
+TypeError: __init__() takes 3 positional arguments but 4 were given
+[2019-03-29 08:35:38,218][Thread-1:140417826928384][task_id:django.server][basehttp.py:136][ERROR]["POST /message/mail/ HTTP/1.1" 500 70760]
+[2019-03-29 08:36:07,630][Thread-1:140387775309568][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:36:08,547][Thread-3:140387766916864][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:14][INFO][1]
+[2019-03-29 08:44:29,938][Thread-1:140081481602816][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:48:30,073][Thread-1:140145178953472][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:48:52,569][Thread-1:140585790912256][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:49:41,229][Thread-1:140665226884864][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:49:49,660][Thread-1:140665226884864][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:51:23,727][Thread-1:140683448112896][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:52:09,933][Thread-1:140131998246656][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:52:26,638][Thread-1:140131998246656][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:53:37,987][Thread-1:139643680978688][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:53:53,603][Thread-1:140323359553280][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:54:14,656][Thread-1:140480427517696][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:54:19,029][Thread-1:140480427517696][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:55:09,905][Thread-1:140299386267392][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:55:10,829][Thread-3:140299377874688][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:16][INFO][1]
+[2019-03-29 08:56:34,455][Thread-1:139750883813120][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:57:11,654][Thread-1:139967327299328][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:57:12,731][Thread-3:139967318906624][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:17][INFO][1]
+[2019-03-29 08:58:25,516][Thread-1:139967327299328][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:58:26,536][Thread-4:139967318906624][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:17][INFO][1]
+[2019-03-29 08:59:31,433][Thread-1:140290140665600][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 08:59:51,618][Thread-1:140290140665600][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 09:00:38,281][Thread-1:140608232232704][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 09:00:52,064][Thread-1:139945201104640][task_id:django.request][log.py:228][ERROR][Internal Server Error: /message/mail/]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 28, in index
+    result=mymail(request,service)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 19, in mymail
+    mails = MyThread(my_mail_send,requserid=requserid,reqmsg_title=reqmsg_title,reqmsg_body=reqmsg_body)
+NameError: name 'reqmsg_body' is not defined
+[2019-03-29 09:00:52,065][Thread-1:139945201104640][task_id:django.server][basehttp.py:136][ERROR]["POST /message/mail/ HTTP/1.1" 500 70855]
+[2019-03-29 09:01:03,958][Thread-1:139687613216512][task_id:django.request][log.py:228][ERROR][Internal Server Error: /message/mail/]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 28, in index
+    result=mymail(request,service)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 19, in mymail
+    mails = MyThread(my_mail_send,requserid=requserid,reqmsg_title=reqmsg_title,reqmsg_body=reqmsg_body)
+NameError: name 'reqmsg_body' is not defined
+[2019-03-29 09:01:03,960][Thread-1:139687613216512][task_id:django.server][basehttp.py:136][ERROR]["POST /message/mail/ HTTP/1.1" 500 70855]
+[2019-03-29 09:01:41,673][Thread-1:139979321628416][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 09:01:42,814][Thread-3:139979312973568][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:18][INFO][1]
+[2019-03-29 09:01:43,430][Thread-1:139979321628416][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 09:01:44,881][Thread-4:139979312973568][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:18][INFO][1]
+[2019-03-29 09:02:29,193][Thread-1:139979321628416][task_id:django.server][basehttp.py:136][INFO]["POST /message/mail/ HTTP/1.1" 200 31]
+[2019-03-29 09:02:30,305][Thread-5:139979312973568][task_id:mymessage.myviews.Mail_Send][Mail_Send.py:18][INFO][1]

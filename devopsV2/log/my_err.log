@@ -1,0 +1,42 @@
+[2019-03-29 08:35:38,217][Thread-1:140417826928384][task_id:django.request][log.py:228][ERROR][Internal Server Error: /message/mail/]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 28, in index
+    result=mymail(request,service)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 19, in mymail
+    mails = MyThread(my_mail_send,requserid,reqmsg_title)
+TypeError: __init__() takes 3 positional arguments but 4 were given
+[2019-03-29 08:35:38,218][Thread-1:140417826928384][task_id:django.server][basehttp.py:136][ERROR]["POST /message/mail/ HTTP/1.1" 500 70760]
+[2019-03-29 09:00:52,064][Thread-1:139945201104640][task_id:django.request][log.py:228][ERROR][Internal Server Error: /message/mail/]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 28, in index
+    result=mymail(request,service)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 19, in mymail
+    mails = MyThread(my_mail_send,requserid=requserid,reqmsg_title=reqmsg_title,reqmsg_body=reqmsg_body)
+NameError: name 'reqmsg_body' is not defined
+[2019-03-29 09:00:52,065][Thread-1:139945201104640][task_id:django.server][basehttp.py:136][ERROR]["POST /message/mail/ HTTP/1.1" 500 70855]
+[2019-03-29 09:01:03,958][Thread-1:139687613216512][task_id:django.request][log.py:228][ERROR][Internal Server Error: /message/mail/]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 28, in index
+    result=mymail(request,service)
+  File "/opt/code/git/repository/devopsV2/mymessage/views.py", line 19, in mymail
+    mails = MyThread(my_mail_send,requserid=requserid,reqmsg_title=reqmsg_title,reqmsg_body=reqmsg_body)
+NameError: name 'reqmsg_body' is not defined
+[2019-03-29 09:01:03,960][Thread-1:139687613216512][task_id:django.server][basehttp.py:136][ERROR]["POST /message/mail/ HTTP/1.1" 500 70855]
