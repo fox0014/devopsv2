@@ -5,6 +5,6 @@ from django.urls import path
 from .myviews import views
  
 urlpatterns = [
-    path('index2', views.index2, name='index2'),
+    path('remotehttp', views.remotehttp, name='remotehttp'),
     path('<str:service>', views.index, name='index'),
 ]

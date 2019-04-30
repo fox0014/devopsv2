@@ -15,7 +15,7 @@ class Mymessage_Chekmail(MiddlewareMixin):
 
     def process_response(self, request, response):
         print('Mymessage_Chek1 return')
-        return response
+        return(response)
 
     def __call__(self, request):
         # Code to be executed for each request before
@@ -31,4 +31,4 @@ class Mymessage_Chekmail(MiddlewareMixin):
 
         print('Mymessage_Chek1 behind view')
 
-        return response
+        return(response)

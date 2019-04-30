@@ -40,3 +40,618 @@ Traceback (most recent call last):
     mails = MyThread(my_mail_send,requserid=requserid,reqmsg_title=reqmsg_title,reqmsg_body=reqmsg_body)
 NameError: name 'reqmsg_body' is not defined
 [2019-03-29 09:01:03,960][Thread-1:139687613216512][task_id:django.server][basehttp.py:136][ERROR]["POST /message/mail/ HTTP/1.1" 500 70855]
+[2019-04-22 06:47:19,007][Thread-1:140090132772608][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'dict' object has no attribute 'decode'
+[2019-04-22 06:47:19,009][Thread-1:140090132772608][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67233]
+[2019-04-22 06:47:55,550][Thread-1:139676318480128][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'dict' object has no attribute 'decode'
+[2019-04-22 06:47:55,551][Thread-1:139676318480128][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67233]
+[2019-04-22 06:50:28,311][Thread-3:140033882371840][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'dict' object has no attribute 'decode'
+[2019-04-22 06:50:28,312][Thread-3:140033882371840][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67233]
+[2019-04-22 06:52:56,328][Thread-3:140627195242240][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'HttpResponse' object has no attribute 'decode'
+[2019-04-22 06:52:56,329][Thread-3:140627195242240][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66854]
+[2019-04-22 06:53:00,062][Thread-3:140627195242240][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'HttpResponse' object has no attribute 'decode'
+[2019-04-22 06:53:00,063][Thread-3:140627195242240][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66854]
+[2019-04-22 06:53:03,120][Thread-3:140627195242240][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'HttpResponse' object has no attribute 'decode'
+[2019-04-22 06:53:03,121][Thread-3:140627195242240][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66854]
+[2019-04-22 06:53:55,341][Thread-3:140493792253696][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 36, in remotehttp
+    redate = data.http_get()
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/viewmyhttp.py", line 33, in http_get
+    return(HttpResponse(myresponse).decode('utf-8'))
+AttributeError: 'HttpResponse' object has no attribute 'decode'
+[2019-04-22 06:53:55,342][Thread-3:140493792253696][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 71688]
+[2019-04-22 06:54:52,906][Thread-1:140534819583744][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'HttpResponse' object has no attribute 'decode'
+[2019-04-22 06:54:52,908][Thread-1:140534819583744][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66854]
+[2019-04-22 06:55:11,971][Thread-1:140440963667712][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'str' object has no attribute 'decode'
+[2019-04-22 06:55:11,972][Thread-1:140440963667712][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67322]
+[2019-04-22 06:55:14,451][Thread-1:140440963667712][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'str' object has no attribute 'decode'
+[2019-04-22 06:55:14,452][Thread-1:140440963667712][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67322]
+[2019-04-22 06:56:23,054][Thread-1:140452794947328][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'str' object has no attribute 'decode'
+[2019-04-22 06:56:23,055][Thread-1:140452794947328][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67322]
+[2019-04-22 06:56:34,977][Thread-1:140452794947328][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'str' object has no attribute 'decode'
+[2019-04-22 06:56:34,978][Thread-1:140452794947328][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67322]
+[2019-04-22 06:59:32,905][Thread-1:140452794947328][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'str' object has no attribute 'decode'
+[2019-04-22 06:59:32,905][Thread-1:140452794947328][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67322]
+[2019-04-22 07:03:30,232][Thread-3:140346951575296][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'HttpResponse' object has no attribute 'decode'
+[2019-04-22 07:03:30,234][Thread-3:140346951575296][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66854]
+[2019-04-22 07:15:13,105][Thread-1:140224315291392][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 36, in remotehttp
+    redate = data.http_get()
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/viewmyhttp.py", line 31, in http_get
+    print(myresponse.decode('utf-8'))
+AttributeError: 'str' object has no attribute 'decode'
+[2019-04-22 07:15:13,108][Thread-1:140224315291392][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 71717]
+[2019-04-22 07:18:01,440][Thread-1:140145923716864][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'dict' object has no attribute 'decode'
+[2019-04-22 07:18:01,442][Thread-1:140145923716864][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67233]
+[2019-04-22 07:18:30,743][Thread-1:140483703879424][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'dict' object has no attribute 'decode'
+[2019-04-22 07:18:30,744][Thread-1:140483703879424][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67233]
+[2019-04-22 07:25:08,679][Thread-3:140614410696448][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:25:08,680][Thread-3:140614410696448][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:27:43,053][Thread-1:140667383289600][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:27:43,054][Thread-1:140667383289600][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:29:15,785][Thread-1:140172524037888][task_id:root][viewmyhttp.py:38][ERROR][name 'response' is not defined]
+[2019-04-22 07:29:15,825][Thread-1:140172524037888][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:29:15,826][Thread-1:140172524037888][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:29:34,669][Thread-3:140460693174016][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:29:34,671][Thread-3:140460693174016][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:32:35,808][Thread-1:139910995130112][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:32:35,809][Thread-1:139910995130112][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:33:15,493][Thread-1:140558606087936][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:33:15,495][Thread-1:140558606087936][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:33:32,149][Thread-3:139695386044160][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:33:32,150][Thread-3:139695386044160][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:33:35,753][Thread-3:139695386044160][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:33:35,754][Thread-3:139695386044160][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:33:51,202][Thread-1:140205851932416][task_id:root][viewmyhttp.py:38][ERROR]['dict' object has no attribute 'content']
+[2019-04-22 07:33:51,240][Thread-1:140205851932416][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'dict' object has no attribute 'decode'
+[2019-04-22 07:33:51,242][Thread-1:140205851932416][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67233]
+[2019-04-22 07:33:54,703][Thread-1:140205851932416][task_id:root][viewmyhttp.py:38][ERROR]['dict' object has no attribute 'content']
+[2019-04-22 07:33:54,742][Thread-1:140205851932416][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'dict' object has no attribute 'decode'
+[2019-04-22 07:33:54,743][Thread-1:140205851932416][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67233]
+[2019-04-22 07:35:14,322][Thread-1:139634592761600][task_id:root][viewmyhttp.py:38][ERROR][name 'rreturn' is not defined]
+[2019-04-22 07:35:14,371][Thread-1:139634592761600][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'dict' object has no attribute 'decode'
+[2019-04-22 07:35:14,372][Thread-1:139634592761600][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67233]
+[2019-04-22 07:35:18,254][Thread-1:139634592761600][task_id:root][viewmyhttp.py:38][ERROR][name 'rreturn' is not defined]
+[2019-04-22 07:35:18,309][Thread-1:139634592761600][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'dict' object has no attribute 'decode'
+[2019-04-22 07:35:18,309][Thread-1:139634592761600][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 67233]
+[2019-04-22 07:35:24,260][Thread-3:139943441315584][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:35:24,261][Thread-3:139943441315584][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:40:43,817][Thread-3:140217431467776][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:40:43,819][Thread-3:140217431467776][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:40:47,780][Thread-3:140217431467776][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:40:47,781][Thread-3:140217431467776][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:41:40,050][Thread-1:140176995120896][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:41:40,051][Thread-1:140176995120896][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:43:29,396][Thread-3:140051674748672][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:43:29,397][Thread-3:140051674748672][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:45:31,871][Thread-1:139705174144768][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:45:31,873][Thread-1:139705174144768][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:50:59,737][Thread-3:140542121608960][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:50:59,738][Thread-3:140542121608960][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66708]
+[2019-04-22 07:51:02,663][Thread-3:140542121608960][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:51:02,664][Thread-3:140542121608960][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66708]
+[2019-04-22 07:51:20,441][Thread-3:140542121608960][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:51:20,442][Thread-3:140542121608960][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66708]
+[2019-04-22 07:51:37,117][Thread-3:140542121608960][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:51:37,117][Thread-3:140542121608960][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66708]
+[2019-04-22 07:51:50,443][Thread-1:140007728961280][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 37, in remotehttp
+    return(HttpResponse(redate.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 07:51:50,444][Thread-1:140007728961280][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 66846]
+[2019-04-22 07:55:22,778][Thread-3:140398510835456][task_id:root][viewmyhttp.py:39][ERROR][dumps() argument after ** must be a mapping, not int]
+[2019-04-22 07:55:22,826][Thread-3:140398510835456][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/middleware/common.py", line 105, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+[2019-04-22 07:55:22,827][Thread-3:140398510835456][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 61466]
+[2019-04-22 08:04:45,142][Thread-1:139895618754304][task_id:root][viewmyhttp.py:38][ERROR]['JsonResponse' object has no attribute 'decode']
+[2019-04-22 08:04:45,184][Thread-1:139895618754304][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 36, in remotehttp
+    redate = data.http_get()
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/viewmyhttp.py", line 39, in http_get
+    return(HttpResponse(myresponse.decode('utf-8')))
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+[2019-04-22 08:04:45,186][Thread-1:139895618754304][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 71177]
+[2019-04-22 08:12:28,889][Thread-1:140391998617344][task_id:root][viewmyhttp.py:39][ERROR][__init__() got an unexpected keyword argument 'indent']
+[2019-04-22 08:12:28,928][Thread-1:140391998617344][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 36, in remotehttp
+    redate = data.http_get()
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/viewmyhttp.py", line 40, in http_get
+    return(HttpResponse(myresponse.decode('utf-8')))
+AttributeError: 'str' object has no attribute 'decode'
+[2019-04-22 08:12:28,930][Thread-1:140391998617344][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 71655]
+[2019-04-22 08:13:37,590][Thread-1:140460713793280][task_id:root][viewmyhttp.py:39][ERROR][__init__() got an unexpected keyword argument 'indent']
+[2019-04-22 08:13:37,644][Thread-1:140460713793280][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 36, in remotehttp
+    redate = data.http_get()
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/viewmyhttp.py", line 40, in http_get
+    return(HttpResponse(myresponse.decode('utf-8')))
+AttributeError: 'str' object has no attribute 'decode'
+[2019-04-22 08:13:37,645][Thread-1:140460713793280][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 71655]
+[2019-04-22 08:13:51,271][Thread-1:140460713793280][task_id:root][viewmyhttp.py:39][ERROR][__init__() got an unexpected keyword argument 'indent']
+[2019-04-22 08:13:51,307][Thread-1:140460713793280][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 36, in remotehttp
+    redate = data.http_get()
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/viewmyhttp.py", line 40, in http_get
+    return(HttpResponse(myresponse.decode('utf-8')))
+AttributeError: 'str' object has no attribute 'decode'
+[2019-04-22 08:13:51,308][Thread-1:140460713793280][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 71655]
+[2019-04-22 08:14:07,955][Thread-1:140460713793280][task_id:root][viewmyhttp.py:39][ERROR][__init__() got an unexpected keyword argument 'indent']
+[2019-04-22 08:14:07,991][Thread-1:140460713793280][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/views.py", line 36, in remotehttp
+    redate = data.http_get()
+  File "/opt/code/git/repository/devopsV2/myhttp/myviews/viewmyhttp.py", line 40, in http_get
+    return(HttpResponse(myresponse.decode('utf-8')))
+AttributeError: 'str' object has no attribute 'decode'
+[2019-04-22 08:14:07,992][Thread-1:140460713793280][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 71655]
+[2019-04-22 08:18:44,539][Thread-1:139742523582208][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2019-04-22 08:18:44,540][Thread-1:139742523582208][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 61549]
+[2019-04-22 08:19:12,320][Thread-1:139742523582208][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2019-04-22 08:19:12,321][Thread-1:139742523582208][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 61549]
+[2019-04-22 08:19:46,690][Thread-3:140617220876032][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/middleware/common.py", line 105, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+[2019-04-22 08:19:46,691][Thread-3:140617220876032][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 61466]
+[2019-04-22 08:19:50,251][Thread-1:140617229268736][task_id:django.request][log.py:228][ERROR][Internal Server Error: /consul/remotehttp]
+Traceback (most recent call last):
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/opt/code/env/python/python3-django/venv/lib/python3.7/site-packages/django/middleware/common.py", line 105, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+[2019-04-22 08:19:50,252][Thread-1:140617229268736][task_id:django.server][basehttp.py:136][ERROR]["GET /consul/remotehttp HTTP/1.1" 500 61466]

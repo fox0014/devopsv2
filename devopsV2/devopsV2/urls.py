@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.urls import path,re_path
 from django.urls.conf import include
 from django.views.generic.base import RedirectView
+# Create your views here.
+#import myjob
+from myjob.views import job_go
 
 urlpatterns = [  
     path('admin/', admin.site.urls),
@@ -24,3 +27,8 @@ urlpatterns = [
     path('consul/', include('myhttp.urls')),
     path('message/', include('mymessage.urls')),
 ]
+
+#test apscheduler
+job_go()
+
+
